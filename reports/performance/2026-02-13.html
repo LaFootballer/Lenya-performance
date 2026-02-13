@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenya Performance Report - 2026-02-13</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-card.work {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        .stat-card.rest {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+        .stat-card h3 {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+        .stat-card .number {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        table thead {
+            background: #f8f9fa;
+            border-bottom: 2px solid #667eea;
+        }
+        table th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #333;
+        }
+        table td {
+            padding: 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        table tr:hover {
+            background: #f8f9fa;
+        }
+        .activity-work {
+            color: #4facfe;
+            font-weight: 600;
+        }
+        .activity-rest {
+            color: #43e97b;
+            font-weight: 600;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Lenya Performance Report</h1>
+            <p>2026-02-13 (Friday)</p>
+        </div>
+        
+        <div class="content">
+            <div class="stats">
+                <div class="stat-card work">
+                    <h3>💼 Work Time</h3>
+                    <div class="number">1.5h</div>
+                </div>
+                <div class="stat-card rest">
+                    <h3>☀️ Rest Time</h3>
+                    <div class="number">2+ h</div>
+                </div>
+                <div class="stat-card">
+                    <h3>⏱️ Active Period</h3>
+                    <div class="number">09:53–11:23</div>
+                </div>
+                <div class="stat-card">
+                    <h3>🎯 Tasks</h3>
+                    <div class="number">1</div>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 30px; margin-bottom: 20px; color: #333;">Activity Timeline</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Duration</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:53</td>
+                        <td>Transfer assets between lending protocols (LTV optimization)</td>
+                        <td>~30 min</td>
+                        <td><span class="activity-work">Work</span></td>
+                    </tr>
+                    <tr>
+                        <td>10:23</td>
+                        <td>Continue asset transfer</td>
+                        <td>~1 hour</td>
+                        <td><span class="activity-work">Work</span></td>
+                    </tr>
+                    <tr>
+                        <td>10:53</td>
+                        <td>Rest break</td>
+                        <td>2+ hours (ongoing)</td>
+                        <td><span class="activity-rest">Rest</span></td>
+                    </tr>
+                    <tr>
+                        <td>11:23</td>
+                        <td>Continue rest (check-in at 13:23 UTC)</td>
+                        <td>Pending</td>
+                        <td><span class="activity-rest">Rest</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 style="margin-bottom: 20px; color: #333;">Summary</h2>
+            <ul style="margin-left: 20px; color: #666; line-height: 1.8;">
+                <li><strong>Primary Task:</strong> DeFi asset optimization (cbBTC/LTV migration)</li>
+                <li><strong>Work Focus:</strong> 1.5 hours on protocol transfers</li>
+                <li><strong>Recovery:</strong> 2+ hours rest after focused work</li>
+                <li><strong>Next Milestone:</strong> Status check at 13:23 UTC</li>
+                <li><strong>Monitoring:</strong> cbBTC price alert (< $66k on Base)</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>📈 Generated: 2026-02-13 11:55 UTC | Updated daily at midnight</p>
+        </div>
+    </div>
+</body>
+</html>
